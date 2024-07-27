@@ -27,19 +27,29 @@ h2 {
 }
 
 .sketch-container {
+    padding: 0px;
+    margin: 0px;
     background-color: #f1f1f1;
-    border: 2px solid #f1f1f1;
     display: flex;
-    height: 300px;
-    width: 400px;
+    height: 256px;
+    width: 256px;
     flex-wrap: wrap;
+    flex: 1;
+}
+
+.cell {
+    padding: 0px;
+    margin: 0px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid black;
 }
 
 .reset-container {
     padding-top: 15px;
     padding-bottom: 5px;
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
 }
 
 .slider-container {
@@ -47,6 +57,7 @@ h2 {
     font-weight: bold;
     font-size: .9em;
     display: flex;
+    align-items: center;
 }
 
 button {
@@ -57,6 +68,7 @@ button {
     border: 1px solid lightgray;
     border-radius: 2.5px;
     cursor: pointer;
+    align-items: center;
 }
 
 button:hover {
@@ -65,10 +77,4 @@ button:hover {
 
 button:active {
     color: goldenrod;
-}
-
-.cell {
-    width: 10px;
-    height: 10px;
-    border: 1px solid black;
 }
