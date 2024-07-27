@@ -2,6 +2,7 @@
 //Create toDraw function with eventListeners for mouse entering and leaving, resulting in random color generation 
 
 const sketchContainer = document.querySelector(".sketch-container");
+const reset = document.querySelector(".reset");
 
 for (let i = 0; i < 16*16; i++) {
     const cellDiv = document.createElement("Div");
@@ -13,5 +14,14 @@ for (let i = 0; i < 16*16; i++) {
         cellDiv.style.backgroundColor = "#" + randomColor; 
     }
     
-    cellDiv.addEventListener("click", getRandomColor);
+    cellDiv.addEventListener("mouseover", getRandomColor);
+
+    const clearColor = () => {
+        cellDiv.style.backgroundColor = "#f1f1f1";
+    }
+    
+    reset.addEventListener("click", clearColor);
 }
+
+
+
