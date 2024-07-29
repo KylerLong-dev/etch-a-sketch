@@ -34,15 +34,15 @@ h2 {
     height: 256px;
     width: 256px;
     flex-wrap: wrap;
-    flex: 1;
 }
 
 .cell {
     padding: 0px;
     margin: 0px;
-    width: 16px;
-    height: 16px;
+    width: var(--cell-size);
+    height: var(--cell-size);
     border: 1px solid black;
+    flex: 0 0 var(--cell-size);
 }
 
 .reset-container {
