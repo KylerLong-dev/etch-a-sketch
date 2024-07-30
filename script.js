@@ -1,6 +1,3 @@
-//**resizing feature with slider**
-//create eventListener for slider that will store the value in a variable,
-//and call createCells with new value
 
 const sketchContainer = document.querySelector(".sketch-container");
 const reset = document.querySelector(".reset");
