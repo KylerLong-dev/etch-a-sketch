@@ -38,7 +38,6 @@ sliderNumber.addEventListener("input", (e) => {
     createCells(sliderValue);
 });
 
-
 reset.addEventListener("click", (e) => {
     const cells = document.querySelectorAll(".cell");
     cells.forEach(cell => {
